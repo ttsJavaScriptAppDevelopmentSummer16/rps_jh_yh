@@ -1,10 +1,20 @@
+var playerName = prompt("Enter name");
 var playerScore = 0;
+
+var computer;
+var computerScore = 0;
+
+var rock = 0;
+var paper = 1;
+var scissors = 2;
+
+var playerHand = prompt("What do you choose, rock, paper or scissors?");
+var computerHand = parseInt(Math.random()*10)%3;
+
 var weapons = ['rock', 'paper', 'scissors'];
 
-computer = parseInt(Math.random()*10)%3;
 
-
-while(playerScore < 3) {
+while(playerWins < 3) {
 
 
 }
