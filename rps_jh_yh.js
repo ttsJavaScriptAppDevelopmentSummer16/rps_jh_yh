@@ -7,6 +7,8 @@ computer = parseInt(Math.random()*10)%3;
 while(playerScore < 3) {
 
 
+}
+
 
 
 
