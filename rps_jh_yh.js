@@ -4,6 +4,7 @@ var playerScore = 0;
 var computer;
 var computerScore = 0;
 
+var weapons = ['rock', 'paper', 'scissors'];
 var rock = 0;
 var paper = 1;
 var scissors = 2;
@@ -11,10 +12,20 @@ var scissors = 2;
 var playerHand = prompt("What do you choose, rock, paper or scissors?");
 var computerHand = parseInt(Math.random()*10)%3;
 
-var weapons = ['rock', 'paper', 'scissors'];
+console.log("You picked " + playerHand);
+switch(computerHand){
+  case 0:
+    console.log("Computer picked rock");
+    break;
+  case 1:
+    console.log("Computer picked paper");
+    break;
+  case 2:
+    console.log("Computer picked scissors");
+    break;
+  }
 
-
-while(playerWins < 3) {
+while(playerScore < 3 || computerScore <3) {
 
 
 }
@@ -67,8 +78,6 @@ while(playerWins < 3) {
 //
 // var computer;
 // var computerScore = 0;
-//
-// var compare;
 //
 // switch(playerChoice){
 //   case 'rock':
